@@ -1,6 +1,6 @@
-function checkAnswer(params) {
-    let correcAnswer = '4';
-    let userAnswer = document.querySelector("input[name=quiz]:checked");
+function checkAnswer() {
+    let correcAnswer = "4";
+    let userAnswer = document.querySelector('input[name = "quiz"]:checked').value;
     if (userAnswer === correcAnswer) {
         document.getElementById("feedback").textContent = "Correct! Well done.";   
     }
@@ -9,4 +9,4 @@ function checkAnswer(params) {
 }
 }
     
-document.getElementById("submit-answer").addEventListener('click', checkAnswer)
+document.getElementById("submit-answer").addEventListener("click", checkAnswer);
